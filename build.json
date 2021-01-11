@@ -1,0 +1,38 @@
+{
+    "appId": "com.electron.container-ps",
+    "productName": "Container PS",
+    "compression": "normal",
+    "copyright": "Copyright @Toinane",
+    "asar": true,
+    "directories": {
+        "buildResources": "assets",
+        "output": "build"
+    },
+    "files": [
+      "src/**/*",
+      "**/*"
+    ],
+    "mac": {
+        "category": "public.app-category.developer-tools",
+        "icon": "icon.icns",
+        "type": "distribution"
+    },
+    "dmg": {
+        "icon": "volumeIcon.icns",
+        "window": {
+            "width": 540,
+            "height": 380
+        }
+    },
+    "linux": {
+        "icon": "src/assets",
+        "synopsis": "Container PS",
+        "category": "Development"
+    },
+    "win": {
+        "icon": "icon.ico"
+    },
+    "nsis": {
+        "oneClick": true
+    }
+}
